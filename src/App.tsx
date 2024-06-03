@@ -10,7 +10,7 @@ function App() {
   }
 
     const setToLocalStorage = () => {
-        localStorage.setItem('counterValue', value.toString())
+        localStorage.setItem('counterValue', JSON.stringify(value))
     }
 
   const getFromLocalStorage = () => {
